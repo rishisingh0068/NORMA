@@ -1,0 +1,16 @@
+{
+  "name": "norma-static-website",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static corporate website for NORMA DND PRODUCTS PRIVATE LIMITED",
+  "scripts": {
+    "dev:css": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch",
+    "build:css": "tailwindcss -i ./src/input.css -o ./assets/css/style.css --minify",
+    "check": "node --check assets/js/main.js && node scripts/check.cjs",
+    "build": "npm run build:css && npm run check"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.10",
+    "tailwindcss": "^4.1.10"
+  }
+}

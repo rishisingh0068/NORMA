@@ -1,0 +1,84 @@
+@layer components {
+ .skip-link { position: fixed; z-index: 100; top: 1rem; left: 1rem; padding: .8rem 1rem; background: white; color: #155952; transform: translateY(-200%); border-radius: .5rem; }
+ .skip-link:focus { transform: translateY(0); }
+ [id] { scroll-margin-top: 7rem; }
+ [hidden] { display: none !important; }
+ .eyebrow { color: #156f66; font-size: .7rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; margin-bottom: 1rem; }
+ .hero-section, .page-heading { padding-block: 4.5rem; background: #eff7f3; border-bottom: 1px solid #dfeae4; }
+ .hero-layout { display: grid; align-items: center; gap: 3rem; }
+ .hero-section h1 { font-size: clamp(2.5rem,4.6vw,4rem); line-height: 1.12; font-weight: 800; letter-spacing: -.05em; color: #071b2b; }
+ .hero-section h1 span { color: #156f66; }
+ .lead { font-size: 1.05rem; line-height: 1.9; color: #526274; margin-block: 1.5rem; max-width: 750px; }
+ .button-row { display: flex; flex-wrap: wrap; gap: .8rem; margin-block: 1.8rem; }
+ .site-button { display: inline-flex; align-items: center; justify-content: center; border: 1px solid #156f66; border-radius: .65rem; background: #156f66; color: white; padding: .85rem 1.1rem; font-size: .85rem; font-weight: 700; text-align: center; }
+ .site-button:hover { background: #164a45; }
+ .site-button.outline { background: white; color: #155952; border-color: #cbdad2; }
+ .site-button.outline:hover { background: #effcf9; }
+ .trust-notes { display: flex; flex-wrap: wrap; gap: .9rem; font-size: .72rem; color: #567465; margin-top: 2rem; }
+ .trust-notes span::before { content: '✓ '; }
+ .hero-visual { background: white; border: 1px solid #dfeae4; border-radius: 1.5rem; overflow: hidden; padding-top: 2rem; box-shadow: 0 20px 50px #123f2b0c; }
+ .hero-visual>p, .hero-visual>h2 { margin-inline: 2rem; }
+ .hero-visual h2 { font-size: 1.9rem; font-weight: 750; color: #071b2b; }
+ .hero-visual img { width: 100%; height: 290px; object-fit: contain; padding: 1.8rem; }
+ .hero-visual>a { display: flex; justify-content: space-between; gap: 1rem; padding: 1.3rem 2rem; background: #e1eee7; color: #155952; font-size: .8rem; font-weight: 700; }
+ .site-section { padding-block: 4.5rem; }
+ .section-top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 1.5rem; margin-bottom: 2rem; }
+ .section-title { font-size: clamp(1.8rem,3vw,2.5rem); line-height: 1.25; font-weight: 750; letter-spacing: -.04em; color: #071b2b; }
+ .product-grid, .info-grid { display: grid; gap: 1.5rem; }
+ .product-card { border: 1px solid #dde6e0; border-radius: 1rem; overflow: hidden; display: flex; flex-direction: column; background: white; }
+ .product-picture { display: block; border-bottom: 1px solid #edf1ee; }
+ .product-picture img { width: 100%; height: 240px; padding: 1.7rem; object-fit: contain; }
+ .product-copy { padding: 1.5rem; display: flex; flex-direction: column; align-items: start; flex: 1; }
+ .product-copy h2 { color: #071b2b; font-weight: 750; font-size: 1.1rem; line-height: 1.4; }
+ .product-copy>p:not(.eyebrow), .product-copy li { color: #526274; font-size: .87rem; line-height: 1.8; }
+ .product-copy>p:not(.eyebrow) { margin-block: .8rem 1.2rem; }
+ .product-copy ul { list-style: disc; padding-left: 1.1rem; margin-bottom: 1.5rem; }
+ .product-copy li { margin-bottom: .5rem; }
+ .product-copy .site-button { margin-top: auto; }
+ .product-copy .eyebrow { font-size: .62rem; margin-bottom: .7rem; }
+ .company-band { background: #f1f6f3; padding-block: 4rem; }
+ .info-panel { padding: 2rem; border: 1px solid #dde6e0; background: white; border-radius: 1rem; }
+ .info-panel h3, .info-panel>h2:not(.section-title) { font-size: 1.15rem; font-weight: 750; color: #071b2b; margin-bottom: .8rem; }
+ .info-panel p { color: #526274; line-height: 1.85; font-size: .95rem; margin-bottom: 1.5rem; }
+ .info-panel p:last-child { margin-bottom: 0; }
+ .callout { background: #e6f1eb; border-radius: 1.5rem; padding-block: 2.5rem; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem; }
+ .callout p:not(.eyebrow) { color: #526274; margin-top: 1rem; }
+ .page-heading h1 { font-size: clamp(2rem,4vw,3.3rem); font-weight: 800; letter-spacing: -.04em; line-height: 1.15; color: #071b2b; }
+ .about-visual { border: 1px solid #dde6e0; padding: 2rem; border-radius: 1rem; }
+ .about-visual img { width: 100%; height: 350px; object-fit: contain; }
+ .info-grid { margin-top: 2rem; }
+ .catalogue-tools { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; margin-bottom: 1.5rem; }
+ .catalogue-tools>div:first-child { flex: 1; min-width: min(100%,230px); }
+ .catalogue-tools label { display: block; font-size: .8rem; font-weight: 700; margin-bottom: .5rem; }
+ .catalogue-tools input, .catalogue-tools select { background: white; border: 1px solid #cbdad2; border-radius: .5rem; width: 100%; padding: .8rem; min-height: 46px; }
+ .catalogue-tools>p { color: #526274; padding-block: .8rem; font-size: .8rem; }
+ .catalogue-note { color: #526274; background: #f2f7f4; border-radius: .5rem; padding: 1rem; margin-bottom: 2rem; line-height: 1.7; font-size: .83rem; }
+ .legal-layout { display: grid; align-items: start; gap: 2rem; }
+ .company-details>div { display: grid; gap: .4rem; border-bottom: 1px solid #e2e8e4; padding-block: 1.25rem; }
+ .company-details dt { font-size: .8rem; font-weight: 700; color: #607368; }
+ .company-details dd { font-size: .95rem; line-height: 1.7; overflow-wrap: anywhere; }
+ .company-details a { color: #156f66; text-decoration: underline; }
+ @media(min-width:640px) { .product-grid, .info-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+ @media(min-width:1024px) { .hero-layout { grid-template-columns: 1.08fr .92fr; } .product-grid, .info-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } .legal-layout { grid-template-columns: 1.5fr 1fr; } }
+ @media(max-width:639px) { .hero-section, .page-heading, .site-section { padding-block: 2.8rem; } .hero-visual img { height: 230px; padding: 1rem; } .info-panel { padding: 1.4rem; } }
+}
+
+@layer components {
+.whats-new-section { padding: 3.5rem 1rem 4rem; }
+.whats-new-heading { text-align: center; margin-bottom: 1.8rem; }
+.whats-new-heading h2 { font-size: 2rem; font-weight: 650; color: #071b2b; }
+.whats-new-heading p { color: #526274; font-size: .85rem; line-height: 1.7; }
+.whats-new-heading a { color: #156f66; text-decoration: underline; text-underline-offset: 3px; }
+.whats-new-divider { display: flex; align-items: center; justify-content: center; gap: .5rem; margin: .65rem 0 1rem; }
+.whats-new-divider span { width: 32px; height: 1px; background: #b4ced0; }
+.whats-new-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; max-width: 1800px; margin-inline: auto; }
+.whats-new-card { display: block; border: 1px solid #d4ded8; border-radius: .25rem; overflow: hidden; box-shadow: 0 2px 5px #071b2b15; }
+.whats-new-card img { display: block; width: 100%; height: auto; aspect-ratio: 4/3; object-fit: contain; }
+.whats-new-card:hover { box-shadow: 0 4px 12px #071b2b25; }
+@media(min-width:640px) { .whats-new-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(min-width:1024px) { .whats-new-grid { grid-template-columns: repeat(4,minmax(0,1fr)); } }
+}
+
+@layer components { .hero-visual.hero-care { padding: 0; position: relative; } .hero-care>img { display: block; width: 100%; height: 440px; padding: 0; object-fit: cover; object-position: center 48%; } .hero-care-caption { padding: 1.5rem 1.8rem; background: white; } .hero-care-caption .eyebrow { margin: 0 0 .5rem; } .hero-care-caption h2 { font-size: 1.55rem; line-height: 1.25; } .hero-care-caption a { display: flex; justify-content: space-between; margin-top: 1rem; font-size: .82rem; font-weight: 700; color: #156f66; } @media(max-width:639px) { .hero-care>img { height: 340px; } .hero-care-caption { padding: 1.3rem; } } }
+
+@layer components { .enquiry-dialog { margin: auto; width: min(540px,calc(100% - 2rem)); max-height: 85dvh; overflow-y: auto; border: 1px solid #dce8e0; border-radius: 1.25rem; padding: 2rem; background: white; color: #071b2b; box-shadow: 0 24px 80px #071b2b33; } .enquiry-dialog::backdrop { background: #071b2b88; } .enquiry-dialog h2 { font-size: 1.5rem; font-weight: 750; } .enquiry-dialog h3 { margin-top: 1.5rem; font-weight: 700; overflow-wrap: anywhere; } .preview-note { margin-top: .75rem; color: #526274; font-size: .85rem; } .preview-body { white-space: pre-wrap; overflow-wrap: anywhere; line-height: 1.8; margin: 1rem 0 1.5rem; } }
